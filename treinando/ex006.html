@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tentativa de Botão</title>
+    <style>
+        div#botao{
+            border: 2px solid black;
+            width: 110px;
+            padding: 10px;
+            border-radius: 5px;
+            
+
+        }
+
+        div#botao > p{
+            margin: 0px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        div#botao:hover{
+            background-color: rgb(28, 28, 233);
+            transition-duration: 1s;
+            
+        }
+        
+        p>a{
+            text-decoration: none;
+            color: black;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="botao">
+        <p><a href="https://www.cursoemvideo.com/">Curso em video</a></p>
+    </div>
+
+    <script>
+        var a = window.document.getElementById('botao')
+
+        a.addEventListener('click',clicar)
+    
+        
+        
+        function clicar()
+        { 
+          a.style.fontWeight = "bold"
+          a.style.textAlign = "center"
+        }
+
+    
+
+
+    </script>
+</body>
+</html>
