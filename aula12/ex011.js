@@ -1,4 +1,4 @@
-var idade = 
+var idade = 38 
 if(idade < 18){
     if(idade >=16){
         console.log(`voto opcional`)
