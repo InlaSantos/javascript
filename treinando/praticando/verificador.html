@@ -10,26 +10,30 @@
     <header>
         <h1>Verificador de Idade</h1>
     </header>
-    <main>
-        <div>
-            <p id="primeiro">
-                ANO:
-                <input type="number" name="txtano" id="txtano">
-            </p>
-            <p id="segundo">
-                <input type="radio" name="radsex" id="radsex" checked>
-                <label for="masc">masculino</label>
-                <input type="radio" name="radsex" id="radsex">
-                <label for="fem">feminino</label>
-            </p>
-        </div>
-        <div id="res">
-
-            <p>
-                <input type="button" value="verificar" onclick="verificar()">
-            </p>
-        </div>
-    </main>
+    <section>
+        
+            <div>
+                <p id="primeiro">
+                    ANO:
+                    <input type="number" name="txtano" id="txtano">
+                </p>
+                <p id="segundo">
+                    <input type="radio" name="radsex" id="radsex" checked>
+                    <label for="masc">masculino</label>
+                    <input type="radio" name="radsex" id="radsex">
+                    <label for="fem">feminino</label>
+                </p>
+                <p id="botao">  
+                    <input type="button" value="verificar" onclick="verificar()"></p>
+            </div>
+            <div id="res">
+                
+            </div>
+            <div id="foto">
+                <img id="imagem" src="" alt="">
+            </div>
+        
+    </section>
     <script src="verificado.js"></script>
 </body>
 </html>

@@ -7,22 +7,24 @@
     
 }
 body{
-    background-color: black;
+    background-image: url(pexels-eva-bronzini-5938608.jpg);
+    background-size: contain;
+    background-size: 46%;
 }
 header{
     text-align: center;
     font-size: 23px;
-    color: white;
     padding: 20px;
     
 }
 
-main{
-    background-color: white;
+section{
+    background-color: rgba(196, 191, 191, 0);
     width: 43vw;
     margin: auto;
     border-radius: 5px;
     padding: 20px;
+    
 }
 p#primeiro{
     padding: 10px;
@@ -36,4 +38,16 @@ p#segundo{
 }
 div#res{
     text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+p#botao{
+    text-align: center;
+    padding: 10px;
+}
+div#foto{
+    text-align: center;
+   
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
 }
