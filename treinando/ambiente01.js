@@ -1,6 +1,6 @@
-let t = 10
+let t = 1
 
 while ( t <= 10){
-    console.log("1")
+    console.log(t)
     t++
 }
