@@ -8,17 +8,37 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Vamos Contar</h1>
     </header>
     <section>
         <div>
-            <label for="iinicio">inicio</label>
-            <input type="number" name="inicio" id="iinicio" autocomplete="cc-number">
+            <p class="primeiro">
+                <label for="iinicio">inicio</label>
+                <input type="number" name="inicio" id="iinicio" autocomplete="cc-number" min="0" max="20" placeholder="0 a 20">
+            </p>
+
+            <p class="segundo">
+                <label for="ifim">Fim:</label>
+                <input type="number" name="Fim" id="ifim" min="0" max="20" placeholder="0 a 20" autocomplete="cc-number">
+            </p>
+
+            <p class="terceiro">
+                <label for="ipasso">Passo:</label>
+                <input type="number" name="Passo" id="ipasso" autocomplete="cc-number" step="1,0" placeholder="coloque os passos">
+            </p>
+
+            <p>
+                <input type="button" value="contar">
+            </p>
         </div>
-        <div id="res"></div>
+        <div id="res">
+            <p>Preparando a contagem...</p>
+        </div>
     </section>
     <footer>
         <p>&copy;Inla santos</p>
     </footer>
+
+    <script src="contar.js"></script>
 </body>
 </html>
