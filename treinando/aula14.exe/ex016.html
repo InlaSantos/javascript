@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +12,41 @@
     </header>
     <section>
         <div>
-            <p class="primeiro">
-                <label for="iinicio">inicio</label>
-                <input type="number" name="inicio" id="iinicio" autocomplete="cc-number" min="0" max="20" placeholder="0 a 20">
-            </p>
+        
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+            
+                <p>
+                    <label for="iinicio">inicio</label>
+                    <input type="number" name="inicio" id="iinicio" autocomplete="cc-number" min="0" max="20" placeholder="0 a 20">
+                </p>
+            
 
-            <p class="segundo">
-                <label for="ifim">Fim:</label>
-                <input type="number" name="Fim" id="ifim" min="0" max="20" placeholder="0 a 20" autocomplete="cc-number">
-            </p>
+            
+                <p>
+                    <label for="ifim">Fim:</label>
+                    <input type="number" name="Fim" id="ifim" min="0" max="20" placeholder="0 a 20" autocomplete="cc-number">
+                </p>
+            
 
-            <p class="terceiro">
-                <label for="ipasso">Passo:</label>
-                <input type="number" name="Passo" id="ipasso" autocomplete="cc-number" step="1,0" placeholder="coloque os passos">
-            </p>
+        
+                <p>
+                    <label for="ipasso">Passo:</label>
+                    <input type="number" name="Passo" id="ipasso" autocomplete="cc-number" step="1,0" placeholder="coloque os passos">
+                </p>
+            
 
-            <p>
-                <input type="button" value="contar">
-            </p>
+        
+                <p>
+                    <input type="button" value="Contar" onclick="contar()">
+                </p>
+                
+            
         </div>
         <div id="res">
-            <p>Preparando a contagem...</p>
+            Preparando a contagem...
         </div>
     </section>
     <footer>
