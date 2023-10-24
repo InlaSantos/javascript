@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="contar.js"></script>
     <title>Modelo de Exercicios</title>
 </head>
 <body>
@@ -12,31 +13,26 @@
     </header>
     <section>
         <div>  
-                <p>
-                    <label for="iinicio">inicio:</label>
-                    <input type="number" name="inicio" id="iinicio" autocomplete="cc-number" min="0" max="20" placeholder="0 a 20">
-                </p>
-            
+                
+            <p>
+                <label for="iinicio">inicio:</label>
+                <input type="number" name="inicio" id="iinicio" autocomplete="cc-number" min="0" max="20" placeholder="0 a 20">
+            </p>
 
-            
-                <p>
-                    <label for="ifim">Fim:</label>
-                    <input type="number" name="Fim" id="ifim" min="0" max="20" placeholder="0 a 20" autocomplete="cc-number">
-                </p>
-            
+            <p>
+                <label for="ifim">Fim:</label>
+                <input type="number" name="Fim" id="ifim" min="0" max="20" placeholder="0 a 20" autocomplete="cc-number">
+            </p>
 
-        
-                <p>
-                    <label for="ipasso">Passo:</label>
-                    <input type="number" name="Passo" id="ipasso" autocomplete="cc-number" step="1,0" placeholder="coloque os passos">
-                </p>
-            
+            <p>
+                <label for="ipasso">Passo:</label>
+                <input type="number" name="Passo" id="ipasso" autocomplete="cc-number" step="1,0" placeholder="coloque os passos">
+            </p>
 
-        
-                <p>
-                    <input type="button" value="contar" onclick="contar()">
-                    <input type="reset" value="Limpar">
-                </p>
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
+            
             
         </div>
         <div id="res">
@@ -47,7 +43,7 @@
         <p>&copy;Inla santos</p>
     </footer>
 
-    <script src="contar.js"></script>
+   
     
 </body>
 </html>

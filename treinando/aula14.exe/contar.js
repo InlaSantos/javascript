@@ -1,13 +1,12 @@
-function contar(){
+function contar (){
     let p1 = document.getElementById("iinicio")
     let p2 = document.getElementById("ifim")
+    let res = document.getElementById("res")
     let ini = Number(p1.value)
     let fim = Number(p2.value)
-    let s = ini + fim 
-    let res = document.getElementById("res")
-    res.innerHTML = `soma é ${s}`
-    
-
+    if( ini == 0 && fim == 0){
+        window.alert("[ERRO] PREENCHER OS CAMPOS")
+    }else if( ){
+        
+    }
 }
-
-
