@@ -6,13 +6,13 @@ function contar (){
     if(p1.value.length == 0 || p2.value.length == 0 ||  p.value.length == 0 ){
         window.alert("[ERRO] PREENCHA OS CAMPOS ABAIXO")
     }else{
-        window.alert("okay")
-        let i = Number(p1)
-        let f = Number(p2)
-        let res = Number(p)
+        res.innerHTML = `Contando`
+        let i = Number(p1.value)
+        let f = Number(p2.value)
+        let p = Number(p.value)
 
-        for(i = Number(p1); i <= f; p +=){
-            res.innerHTML = `Contando: ${res}`
+        for(let c = i; c <= f; c += p){
+            res.innerHTML += `${c}`
         }
     }
 }
