@@ -1,18 +1,20 @@
-function contar (){
-    let p1 = document.getElementById("iinicio")
-    let p2 = document.getElementById("ifim")
-    let p = document.getElementById("ipasso")
+function contar(){
+    let ini = document.getElementById("txti")
+    let fim = document.getElementById("txtf")
+    let passo = document.getElementById("txtp")
     let res = document.getElementById("res")
-    if(p1.value.length == 0 || p2.value.length == 0 ||  p.value.length == 0 ){
-        window.alert("[ERRO] PREENCHA OS CAMPOS ABAIXO")
+    if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        window.alert("[ERRO] PREENCHAR OS CAMPOS ABAIXO")
     }else{
-        res.innerHTML = `Contando`
-        let i = Number(p1.value)
-        let f = Number(p2.value)
-        let p = Number(p.value)
+        res.innerHTML = 'Contando:'
+
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value);
 
         for(let c = i; c <= f; c += p){
-            res.innerHTML += `${c}`
+            res.innerHTML += `${c} \u{1F449}`
+            
         }
     }
 }
