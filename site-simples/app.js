@@ -10,5 +10,5 @@ switcher.addEventListener('click', function(){
     }else{
         this.textContent = "Ligth"
     }
-    
+    console.log('current class name:' + className);
 });
