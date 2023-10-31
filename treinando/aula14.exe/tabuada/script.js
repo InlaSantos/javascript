@@ -8,7 +8,7 @@ function tabuada(){
         let n = Number(num.value)
 
         while( n <= 10){
-            tab.innerHTML = `${n}`
+            let item = document.createElement('option')//voce criar elemento no JS
         }
 
     }
