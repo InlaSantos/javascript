@@ -8,12 +8,13 @@ function tabuada(){
     }else{
         let n = Number(num.value)
         let c = 1
-        tab.innerHTML = ``
+
+        tab.innerHTML = ``//antes começar ele limpar a area
         while( c <= 10){
             let item = document.createElement('option')//voce criar elemento no JS
-            item.text = `${n} X ${c} = ${n*c}`
-            item.value = `tab${c}`
-            tab.appendChild(item)
+            item.text = `${n} X ${c} = ${n*c}`//você coloca conteudo dentro do elemento que criou
+            item.value = `tab${c}`//vc usar para outras linguagem como php.e para mostrar item selecionado
+            tab.appendChild(item)//você adiciona o elemento filho ao elemento que vc criou 
 
             
             c++
