@@ -14,6 +14,8 @@ function tabuada(){
             item.text = `${n} X ${c} = ${n*c}`
             item.value = `tab${c}`
             tab.appendChild(item)
+
+            
             c++
 
         }
