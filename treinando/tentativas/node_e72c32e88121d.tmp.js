@@ -7,16 +7,7 @@ if(a >= 10){
     }
 }
 */
-
-/*
-let a = 8
+ let a = 8
 do{
     console.log("oie tudo bom")
 }while(a >= 1)
-
-*/
-
-let a = a
-while(a == a){
-    console.log("deu certo")
-}
