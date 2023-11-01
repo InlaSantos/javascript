@@ -1,4 +1,4 @@
-let a = 5
+/* let a = 5
 if(a >= 10){
     console.log("[DEU ERRO]")
 }else{
@@ -6,3 +6,4 @@ if(a >= 10){
         console.log("funcionou")
     }
 }
+*/
