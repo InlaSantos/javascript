@@ -16,7 +16,7 @@ do{
 
 */
 
-let a = "ab"
-while(a == ab){
+let a = 10
+while(a == 10){
     console.log("deu certo")
 }
