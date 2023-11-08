@@ -1,10 +1,10 @@
-let res = parimp(223)
 function parimp(n){
     if(n%2 == 0){
-        return "par"
+        return 'par'
     }else{
         return 'impar'
     }
 }
-console.log(res)
 
+let res = parimp(10)
+console.log(res)
