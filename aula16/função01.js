@@ -1,9 +1,10 @@
 function parimpa(n){
-    if(n%2 == 0){
+    if(n % 2 == 0 ){
         return 'par'
     }else{
-        return "impar"
+        return 'impar'
     }
 }
-let res = parimpa(3)
-console.log(res)
+
+let n = parimpa(3)
+console.log(n)
