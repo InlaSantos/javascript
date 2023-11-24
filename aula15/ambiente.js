@@ -8,7 +8,7 @@ console.log(`o vetor tem ${num.length} posições`)
 console.log(`o primeiro valor da array é ${num[0]}`)//num[0] voçe mostrar o primeiro valor da array num é o nome do array que voce escolheu pode ser qualquer um
 
 let pos = num.indexOf(3) // .indexOf procura o valor das arrays
-if(pos == -1){
+if(pos == 0){
     console.log(`Posição não encontrada`)
 }else{
     console.log(`a posição é ${pos}`)
