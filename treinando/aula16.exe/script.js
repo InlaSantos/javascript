@@ -1,14 +1,30 @@
-function adicionar(){
-    let n = document.querySelector('input#inumero')
-    let a = []
-    let nr = Number(n.value)
-    if(nr == 0){
-        window.alert('preenchar o campo abaixo')
-    }else{
-        let li = document.querySelector("select#iflista")
-        let item = document.createElement('option')
-        item.text = `Valor ${nr} Adicionado`
-        li.appendChild(item)
+let num = document.querySelector('input#inumero')
+let lista = document.querySelector('select#iflista')
+let res = document.querySelector('div#res')
+let valores = [] //é uma array global para receber os dados
 
+function isnumber(){
+    if(Number(num.value) == 0 && Number(num.value) != 100){
+        return true
+    }else{
+        return false
     }
+}
+
+function nalista(){
+    if(lista.indexof(num) == -1){
+        return false
+    }else{
+        return true
+    }
+    
+}
+
+function adicionar(){
+    if(isnumber(num.value) && nalista(num.value) == false){
+        window.alert("certo")
+    }else{
+        window.alert('deu errado')
+    }
+        
 }
