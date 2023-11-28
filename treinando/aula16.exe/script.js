@@ -1,31 +1,19 @@
-let number = document.querySelector('input#inumero')
-let lista = document.querySelector('select#iflista')
-let res = document.querySelector('div#res')
-let dados = [] // é um array global
-
-function isnumber(n){
-    if(Number(n) >= 1 && Number(n) <= 100){
-        return true
-    }else{
-        return false
-    }
-}
-
-function nalista(n){
-    if(lista.indexOF(Number(n)) != -1){
-        return true
-    }else{
-        return false
-    }
-}
+let num = document.querySelector('input#inumero')
+let lista = document.querySelector("select#iflista")
+let rest = document.querySelector('div#res')
+let dados = []
 
 function adicionar(){
-    if(isnumber(number.value) && !nalista(number.value)){
-        
+    if(Number(num.value) == 0 || Number(num.value) >= 101){
+        window.alert('Numero Invalido')
     }else{
-    window.alert(`valor invalido ou ja encontrado na lista.`)
+        dados.push(num.value)
+        if(lista.indexOF(num.value) != -1){
+            window.alert(`Valor ja presente na lista`)
+        }else{
+            let item = document.createElement("option")
+            item.text = `Valor ${dados} adicionado`
+            lista.appendChild(item)
+        }
     }
-
 }
-
-   
