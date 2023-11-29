@@ -29,6 +29,7 @@ section{
 select#iflista{
     display: block;
     width: 180px;
+    
 }
 
 div#msg{
@@ -59,6 +60,9 @@ div#foto{
 div#res{
     float: right;
     transform: translateY(-225px);
+    width: 60%;
+    
+
 }
 div#res > p > strong{
     color: rgb(177, 5, 5);
