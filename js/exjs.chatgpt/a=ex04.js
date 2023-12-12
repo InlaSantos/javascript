@@ -2,6 +2,9 @@ let listaDeTarefas = ['Estudar Javascript', 'Fazer exercícios físicos','Ler um
 
 console.log('Lista de Tarefas Inicial', listaDeTarefas)
 
+
+
+
 listaDeTarefas.push('Fazer compras')
 listaDeTarefas.unshift('Aprender algo novo')
 console.log('lista de exercicios após operações', listaDeTarefas)
@@ -22,6 +25,9 @@ console.log('Parte da Lista:', parteDaLista)
 let elementosRemovidos = listaDeTarefas.splice(0,1)
 console.log('Elementos removidos:', elementosRemovidos)
 
+console.log('adicionando mais tarefas')
+let novasTarefas = [...listaDeTarefas, 'Aprender a falar inglês', 'Praticar o espanhol' ]
+console.log('Novas Tarefas', novasTarefas)
 
 
 
